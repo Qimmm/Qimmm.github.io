@@ -54,7 +54,7 @@ function tonav() {
     position = scroll;
   });
   //修复没有弄右键菜单的童鞋无法回顶部的问题
-  document.getElementById("page-name").innerText = document.title.split(" | Fomalhaut🥝")[0];
+  document.getElementById("page-name").innerText = document.title.split(" | Fickle🐻")[0];
 }
 
 function scrollToTop() {
@@ -1119,7 +1119,7 @@ function createtime1() {
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
+    `欢迎来到Fickle🐻🥝の小家!`,
     `Future is now 🍭🍭🍭`,
     `
         
@@ -1133,7 +1133,7 @@ function createtime1() {
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2022 By Fomalhaut",
+    "©2022 By Fickle🐻",
   ];
 
   setTimeout(
@@ -1172,7 +1172,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
+      "%c ⚡ Powered by Fickle🐻 %c 你正在访问Fickle🐻の小家",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -1282,8 +1282,8 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('Fomalhaut🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+    var subTitle = title.endsWith("| Fickle🐻") ? title.substring(0, title.length - 14) : title;
+    navigator.clipboard.writeText('Fickle🐻的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
     new Vue({
       data: function () {
         this.$notify({
@@ -1321,11 +1321,11 @@ var titleTime;
 document.addEventListener('visibilitychange', function () {
   if (document.hidden) {
     //离开当前页面时标签显示内容
-    document.title = '👀跑哪里去了~';
+    document.title = '👀偷瞄ing';
     clearTimeout(titleTime);
   } else {
     //返回当前页面时标签显示内容
-    document.title = '🐖抓到你啦～';
+    document.title = '😍欸嘿嘿';
     //两秒后变回正常标题
     titleTime = setTimeout(function () {
       document.title = OriginTitile;
@@ -2804,8 +2804,8 @@ function createtime() {
   let currentTimeHtml = "";
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<img class='boardsign' src='https://lskypro.acozycotage.net/Fickle🐻/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fickle🐻/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
@@ -3174,10 +3174,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://pic.imgdb.cn/item/64983d071ddac507cc9d9df5.jpg);
+    --darkmode-bg:url(https://pic.imgdb.cn/item/64ba11e01ddac507ccca10fd.jpg);
+    --mobileday-bg: url(https://cdn.skypro.cartafi.cn/2023/04/20/mb4.webp);
+    --mobilenight-bg: url(https://cdn.skypro.cartafi.cn/2023/04/20/mb4.webp);
   }`;
 }
 // 切换背景主函数
@@ -3322,7 +3322,7 @@ function createWinbox() {
     title: "美化设置",
     x: "left",
     y: "center",
-    minwidth: "300px",
+    minwidth: "290px",
     height: "60%",
     // "#76c8f1"
     background: 'var(--theme-color)',
@@ -3378,13 +3378,13 @@ function createWinbox() {
 <div class="note warning modern"><p>非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，如有侵权请联系站长删除，谢谢！ —— 致版权方</p>
 </div>
 <p id="swfs">
-<a class="swf" id="swf_ZhuZiAWan" href="javascript:;" rel="noopener external nofollow" style="font-family:'ZhuZiAWan'!important;color:black" onclick="setFont('ZhuZiAWan')">筑紫A丸标准体2.0</a>
-<a class="swf" id="swf_HYTMR" href="javascript:;" rel="noopener external nofollow" style="font-family:'HYTMR'!important;color:black" onclick="setFont('HYTMR')">汉仪唐美人</a>
-<a class="swf" id="swf_LXGW" href="javascript:;" rel="noopener external nofollow" style="font-family:'LXGW'!important;color:black" onclick="setFont('LXGW')">霞鹜文楷</a>
-<a class="swf" id="swf_TTQHB" href="javascript:;" rel="noopener external nofollow" style="font-family:'TTQHB'!important;color:black" onclick="setFont('TTQHB')">甜甜圈海报</a>
-<a class="swf" id="swf_YSHST" href="javascript:;" rel="noopener external nofollow" style="font-family:'YSHST'!important;color:black" onclick="setFont('YSHST')">优设好身体</a>
-<a class="swf" id="swf_MiSans" href="javascript:;" rel="noopener external nofollow" style="font-family:'MiSans'!important;color:black" onclick="setFont('MiSans')">MiSans</a>
-<a class="swf" id="swf_default" href="javascript:;" rel="noopener external nofollow" style="font-family:-apple-system, IBM Plex Mono ,monosapce,'微软雅黑', sans-serif;!important;color:black" onclick="setFont('default')">系统默认</a>
+<a class="swf" id="swf_ZhuZiAWan" href="javascript:;" rel="noopener external nofollow" style="color: rgb(48, 48, 48); font-family: ZhuZiAWan !important; border: 2px solid var(--theme-color);" onclick="setFont('ZhuZiAWan')">筑紫A丸标准体2.0</a>
+<a class="swf" id="swf_HYTMR" href="javascript:;" rel="noopener external nofollow" style="color: rgb(48, 48, 48); font-family: HYTMR !important; border: 2px solid var(--border-color);" onclick="setFont('HYTMR')">汉仪唐美人</a>
+<a class="swf" id="swf_LXGW" href="javascript:;" rel="noopener external nofollow" style="color: rgb(48, 48, 48); font-family: LXGW !important; border: 2px solid var(--border-color);" onclick="setFont('LXGW')">霞鹜文楷</a>
+<a class="swf" id="swf_TTQHB" href="javascript:;" rel="noopener external nofollow" style="color: rgb(48, 48, 48); font-family: TTQHB !important; border: 2px solid var(--border-color);" onclick="setFont('TTQHB')">甜甜圈海报</a>
+<a class="swf" id="swf_YSHST" href="javascript:;" rel="noopener external nofollow" style="color: rgb(48, 48, 48); font-family: YSHST !important; border: 2px solid var(--border-color);" onclick="setFont('YSHST')">优设好身体</a>
+<a class="swf" id="swf_MiSans" href="javascript:;" rel="noopener external nofollow" style="color: rgb(48, 48, 48); font-family: MiSans !important; border: 2px solid var(--border-color);" onclick="setFont('MiSans')">MiSans</a>
+<a class="swf" id="swf_default" href="javascript:;" rel="noopener external nofollow" style="font-family: -apple-system, &quot;IBM Plex Mono&quot;, monosapce, 微软雅黑, sans-serif; color: rgb(48, 48, 48); border: 2px solid var(--border-color);" onclick="setFont('default')">系统默认</a>
 </p>
 
 <h2>三、主题色设置</h2>
@@ -3402,12 +3402,14 @@ function createWinbox() {
         onclick="setColor('blackgray')"></div>
 
 <h2>四、背景设置</h2>
-<center><button onclick="resetBg()" style="background:var(--theme-color);display:block;width:35%;padding:15px 0;border-radius:30px;color:white;"><i class="fa-solid fa-arrows-rotate"></i>&nbsp;恢复默认背景</button></center>
+<center>
+<button onclick="resetBg()" style="background:var(--theme-color);display:block;width:35%;padding:15px 0;border-radius:30px;color:white;"><i class="fa-solid fa-arrows-rotate"></i>&nbsp;恢复默认背景</button>
+</center>
 
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/yuanshen1.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/yuanshen1.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/dm15.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/dm15.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/dm2.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/dm2.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/dm7.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/dm7.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/dm8.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/dm8.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/dm3.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/dm3.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/dm11.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/dm11.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/dm12.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/dm12.webp)')"></a></div>
               </div>
             </details>
 
@@ -3416,7 +3418,7 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看风景背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/fj1.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/fj1.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/fj2.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/fj2.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/fj3.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/fj3.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/fj4.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/fj4.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/fj5.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/fj5.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/fj6.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/fj6.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/fj7.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/fj7.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/fj8.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/fj8.webp)')"></a></div>
               </div>
             </details>
 
@@ -3424,7 +3426,7 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看萌宠背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mc1.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mc1.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mc2.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mc2.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mc3.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mc3.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mc4.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mc4.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mc5.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mc5.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mc6.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mc6.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mc7.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mc7.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mc8.webp)" class="imgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mc8.webp)')"></a></div>
               </div>
             </details>
 
@@ -3448,7 +3450,7 @@ function createWinbox() {
 <h3>6. 适配手机</h3>
 <details class="folding-tag" cyan><summary> 查看适配手机的背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)" class="pimgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mb4.webp)" class="pimgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mb4.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mb5.webp)" class="pimgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mb5.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mb6.webp)" class="pimgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mb6.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mb7.webp)" class="pimgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mb7.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mb8.webp)" class="pimgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mb8.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mb9.webp)" class="pimgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mb9.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mb16.webp)" class="pimgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mb16.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.skypro.cartafi.cn/2023/04/20/mb19.webp)" class="pimgbox" onclick="changeBg('url(https://cdn.skypro.cartafi.cn/2023/04/20/mb19.webp)')"></a></div>
               </div>
             </details>
 
